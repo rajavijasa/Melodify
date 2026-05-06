@@ -1,0 +1,4 @@
+host: ftpupload.net
+usn: if0_41847466
+password: RH3qj53UxNX1p
+port: 21

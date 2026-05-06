@@ -290,3 +290,14 @@
                 width: 90%;
             }
         }
+
+        /* extra small portrait phones (9:16) */
+        @media screen and (max-width: 430px) and (orientation: portrait) {
+            .login-container { max-width: 92%; padding: 18px; margin: 12px auto; }
+            .login-logo { width: 80px; height: 80px; }
+            .login-title { font-size: 22px; }
+            .form-control { padding: 14px; font-size: 16px; }
+            .btn { padding: 14px; font-size: 16px; }
+            header { position: fixed; top: 0; left: 0; right: 0; }
+            .content { padding-top: 100px; }
+        }

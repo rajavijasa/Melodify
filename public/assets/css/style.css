@@ -811,3 +811,45 @@ footer {
         margin: 16px;
     }
 }
+
+/* Mobile portrait (9:16) - tighter, touch-friendly rules */
+@media (max-width: 430px) and (orientation: portrait) {
+    :root { --touch-spacing: 14px; }
+
+    header { padding: 10px 8px; }
+    .header-content { padding: 8px 0; }
+    .logo-container { flex: 0 0 56px; }
+    .logo { width: 48px; height: auto; }
+    .brand-name { font-size: 20px; margin-bottom: 6px; }
+
+    .main-nav { justify-content: center; gap: 6px; padding-top: 8px; }
+    .nav-item a { padding: 12px 10px; font-size: 15px !important; }
+    .user-nav { margin: 12px auto 0; }
+    .user-nav a { padding: 12px 18px !important; font-size: 15px !important; border-radius: 12px; }
+
+    .hero-section { height: 55vh; min-height: 300px; }
+    .hero-title { font-size: 28px; }
+    .hero-subtitle { font-size: 15px; }
+
+    .music-grid { grid-template-columns: 1fr; gap: 12px; }
+    .music-card { border-radius: 10px; padding-bottom: 8px; }
+    .card-image-container { padding-top: 56%; margin: 12px; }
+    .card-title, .card-subtitle { white-space: normal; overflow: visible; }
+    .card-content { padding: 14px; }
+
+    .btn { padding: 14px; font-size: 16px; width: 100%; border-radius: 12px; }
+
+    audio, audio[controls] { width: 100% !important; height: auto; display: block; }
+
+    .login-container { max-width: 92%; padding: 18px; margin: 12px auto; }
+    .login-title { font-size: 22px; }
+
+    footer .footer-content { grid-template-columns: 1fr; gap: 18px; }
+    .footer-column h3 { font-size: 15px; }
+
+    .dropdown-list { left: auto; right: 0; min-width: 140px; }
+    .dropdown-list .nav-item a { padding: 12px 14px; font-size: 15px; }
+
+    /* improve touch targets for small screens */
+    a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.05); }
+}
