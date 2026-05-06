@@ -1,7 +1,9 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 session_start();
 
-require "../app/core/init.php";
+require "app/core/init.php";
 
 $URL = $_GET['url'] ?? "home";
 $URL = explode("/", $URL);

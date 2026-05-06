@@ -2,7 +2,7 @@
 
 function page($name)
 {
-    return "../app/pages/" . $name . ".php";
+    return "app/pages/" . $name . ".php";
 }
 
 function show($stuff)
@@ -13,7 +13,7 @@ function show($stuff)
 }
 function db_connect()
 {
-    $string = DBDRIVER . ":hostname=" . DBHOST . ";dbname=" . DBNAME;
+    $string = DBDRIVER . ":host=" . DBHOST . ";dbname=" . DBNAME;
     $con = new PDO($string, DBUSER, DBPASS);
 
     return $con;

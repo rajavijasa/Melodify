@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= ucfirst($URL[0]) ?>- Melodify - Your Music Journey Starts Here</title>
-    <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/assets/css/style.css?67er">
+    <link rel="stylesheet" type="text/css" href="<?= ROOT ?>/assets/css/style.css?v=<?= time() ?>">
 </head>
 
 <body>
@@ -105,6 +105,3 @@
             </div>
         </div>
     </header>
-</body>
-
-</html>
